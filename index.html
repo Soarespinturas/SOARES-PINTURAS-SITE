@@ -1,135 +1,315 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soares Pinturas – Pintura de alto padrão Uberlândia</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 26px;
-            color: #1a1a1a;
-        }
-        .cta {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #555;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 960px;
-            margin: auto;
-        }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .services {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        .service {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-        }
-        .service img {
-            width: 100%;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
-        footer {
-            background-color: #111;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soares Pinturas - Pintura de Alto Padrão em Uberlândia</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background: #005f73;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 15px 15px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+    .btn-primary {
+      background: #ee6c4d;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: #d3543a;
+    }
+
+    /* Benefícios */
+    .benefits {
+      background: white;
+      padding: 30px 20px;
+      margin: 30px 0;
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 20px;
+    }
+    .benefit-item {
+      background: #caf0f8;
+      border-radius: 10px;
+      padding: 20px;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    }
+
+    /* Serviços */
+    .services {
+      background: white;
+      padding: 30px 20px;
+      margin: 30px 0;
+      border-radius: 12px;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+    .service-list {
+      list-style-type: disc;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 20px;
+      font-size: 1.1rem;
+      color: #023e8a;
+    }
+
+    /* Depoimentos */
+    .testimonials {
+      background: white;
+      padding: 30px 20px;
+      margin: 30px 0;
+      border-radius: 12px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #ee6c4d;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    blockquote footer {
+      font-weight: 600;
+      color: #222;
+      margin-top: 5px;
+      text-align: right;
+    }
+
+    /* Galeria */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+      object-fit: cover;
+      height: 180px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Oferta */
+    .offer {
+      background: #ee6c4d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-radius: 12px;
+      margin: 40px 0;
+      box-shadow: 0 3px 15px rgba(238,108,77,0.4);
+    }
+
+    /* Formulário */
+    form {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 0 auto 50px auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #0077b6;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 12px 10px;
+      margin-bottom: 20px;
+      border-radius: 7px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form select:focus {
+      border-color: #ee6c4d;
+      outline: none;
+    }
+    form button {
+      background: #ee6c4d;
+      color: white;
+      padding: 15px;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+      font-weight: 700;
+    }
+    form button:hover {
+      background: #d3543a;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #005f73;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      border-radius: 15px 15px 0 0;
+    }
+    footer a {
+      color: #ee6c4d;
+      font-weight: 700;
+      margin: 0 5px;
+    }
+
+    /* Responsividade */
+    @media(max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Soares Pinturas – Pintura de alto padrão Uberlândia</h1>
-    <div class="cta">Acabamento impecável, durabilidade e atendimento com excelência</div>
-    <a class="button" href="https://wa.me/5534999202880?text=Olá%2C%20quero%20um%20orçamento" target="_blank">Fale no WhatsApp</a>
+  <div class="container">
+    <h1>Transforme Seu Espaço com Pintura de Alto Padrão em Uberlândia</h1>
+    <p>Acabamento impecável em fachadas, interiores, madeira e metais. Qualidade, durabilidade e beleza que fazem a diferença.</p>
+    <a href="https://wa.me/5598981516639" target="_blank" class="btn-primary" rel="noopener noreferrer">
+      Peça seu Orçamento Grátis Agora
+    </a>
+  </div>
 </header>
 
-<section>
-    <h2>Quem somos</h2>
-    <p>Sou Samuel, especialista em pintura residencial e comercial em Uberlândia. Atuo com foco em qualidade, durabilidade e acabamento de alto padrão. Ofereço soluções completas para fachadas, áreas gourmet, madeira, metais e muito mais.</p>
+<section class="benefits container" aria-label="Benefícios">
+  <div class="benefit-item">Profissionais especializados e experientes</div>
+  <div class="benefit-item">Materiais de alta qualidade e tecnologia avançada</div>
+  <div class="benefit-item">Atendimento personalizado e ágil</div>
+  <div class="benefit-item">Garantia de satisfação e acabamento perfeito</div>
 </section>
 
-<section>
-    <h2>Serviços oferecidos</h2>
-    <div class="services">
-        <div class="service">
-            <h3>Pintura de Fachadas, Garagens e Área Gourmet</h3>
-            <p>Valorizamos sua casa com pintura externa de alto padrão, ideal para quem busca um visual limpo, elegante e durável.</p>
-            <img src="https://raw.githubusercontent.com/Soarespinturas/SOARES-PINTURAS-SITE/main/IMG_5795.jpeg">
-        </div>
-        <div class="service">
-            <h3>Impermeabilização</h3>
-            <p>Protegemos sua casa contra infiltrações, usando materiais de qualidade profissional para lajes, paredes e áreas externas.</p>
-            <img src="https://raw.githubusercontent.com/Soarespinturas/SOARES-PINTURAS-SITE/main/IMG_6457.jpeg">
-        </div>
-        <div class="service">
-            <h3>Tratamento de Trincas</h3>
-            <p>Corrigimos trincas com técnicas adequadas, garantindo segurança, estética e durabilidade.</p>
-            <img src="https://raw.githubusercontent.com/Soarespinturas/SOARES-PINTURAS-SITE/main/IMG_5953.jpeg">
-        </div>
-        <div class="service">
-            <h3>Texturas e Revestimentos</h3>
-            <p>Aplicamos texturas modernas e revestimentos que trazem sofisticação ao ambiente, interno ou externo.</p>
-            <img src="https://raw.githubusercontent.com/Soarespinturas/SOARES-PINTURAS-SITE/main/IMG_6326.jpeg">
-        </div>
-        <div class="service">
-            <h3>Pintura Metálica</h3>
-            <p>Ideal para portões, grades, estruturas metálicas — usamos tintas resistentes ao tempo com acabamento uniforme.</p>
-            <img src="https://raw.githubusercontent.com/Soarespinturas/SOARES-PINTURAS-SITE/main/IMG_6344.jpeg">
-        </div>
-        <div class="service">
-            <h3>Restauração de Madeiras</h3>
-            <p>Recuperamos o brilho e a beleza de portas, pergolados e móveis de madeira com produtos específicos e técnicas refinadas.</p>
-            <img src="https://raw.githubusercontent.com/Soarespinturas/SOARES-PINTURAS-SITE/main/IMG_6621.jpeg">
-        </div>
-    </div>
+<section class="services container" aria-label="Serviços oferecidos">
+  <h2>Nossos Serviços</h2>
+  <ul class="service-list">
+    <li>Pintura residencial e comercial</li>
+    <li>Pintura em fachadas</li>
+    <li>Pintura em madeiras e metais</li>
+    <li>Impermeabilização</li>
+    <li>Tratamento de trincas e fissuras</li>
+    <li>Aplicação de texturas e revestimentos decorativos</li>
+  </ul>
+</section>
+
+<section class="testimonials" aria-label="Depoimentos de clientes">
+  <h2>Depoimentos</h2>
+  <blockquote>
+    “O serviço da Soares Pinturas superou minhas expectativas! Recomendo para quem busca qualidade.”<footer>– João S.</footer>
+  </blockquote>
+  <blockquote>
+    “Equipe muito profissional e atendimento rápido. Minha casa ficou maravilhosa.”<footer>– Maria F.</footer>
+  </blockquote>
+</section>
+
+<section class="gallery container" aria-label="Galeria de fotos de trabalhos">
+  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/antes1.jpg" alt="Antes da pintura de fachada residencial" />
+  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/depois1.jpg" alt="Depois da pintura de fachada residencial" />
+  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/antes2.jpg" alt="Antes da pintura de parede interna" />
+  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/depois2.jpg" alt="Depois da pintura de parede interna" />
+</section>
+
+<section class="offer container" aria-label="Oferta especial">
+  10% de desconto na primeira pintura residencial! Satisfação garantida ou seu dinheiro de volta.
+</section>
+
+<section class="contact container" aria-label="Formulário de contato">
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <h2>Peça seu Orçamento</h2>
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" required placeholder="Seu nome completo" />
+    <label for="phone">Telefone / WhatsApp</label>
+    <input type="tel" id="phone" name="phone" required placeholder="(99) 99999-9999" />
+    <label for="service">Serviço desejado</label>
+    <select id="service" name="service">
+      <option value="" disabled selected>Selecione o serviço</option>
+      <option value="pintura_residencial">Pintura Residencial</option>
+      <option value="pintura_comercial">Pintura Comercial</option>
+      <option value="fachadas">Fachadas</option>
+      <option value="madeiras_metal">Madeiras e Metais</option>
+      <option value="impermeabilizacao">Impermeabilização</option>
+      <option value="texturas_revestimentos">Texturas e Revestimentos</option>
+    </select>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
 
 <footer>
-    Samuel Vieira Soares – Soares Pinturas<br>
-    Uberlândia, MG<br>
-    WhatsApp: (34) 99920-2880
+  <p>Contato: <a href="tel:+5598981516639">+55 (98) 98151-6639</a> | WhatsApp: <a href="https://wa.me/5598981516639" target="_blank" rel="noopener noreferrer">Clique aqui</a></p>
+  <p>Siga-nos no Instagram: <a href="https://instagram.com/soarespinturas" target="_blank" rel="noopener noreferrer">@soarespinturas</a></p>
+  <p>© 2025 Soares Pinturas - Todos os direitos reservados.</p>
 </footer>
 
 </body>
