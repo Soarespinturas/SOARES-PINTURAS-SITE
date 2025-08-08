@@ -3,333 +3,291 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Soares Pinturas - Pintura de Alto Padrão em Uberlândia</title>
+  <title>Soares Pinturas | Pintura Residencial e Comercial de Alto Padrão</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  
   <style>
-    /* Reset básico */
+    /* Reset */
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      margin: 0; padding: 0; box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
+      font-family: 'Open Sans', sans-serif;
       background: #fafafa;
-      color: #222;
+      color: #333;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
     a {
+      color: #d35400;
       text-decoration: none;
-      color: inherit;
       transition: color 0.3s ease;
     }
     a:hover {
-      color: #ee6c4d;
+      color: #e67e22;
     }
     .container {
-      max-width: 1080px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 40px 20px;
     }
-
     header {
-      background: #fff;
-      padding: 60px 20px 40px;
+      background: white;
+      padding: 60px 20px;
       text-align: center;
-      border-bottom: 1px solid #e0e0e0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-bottom: 2px solid #eee;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
     header h1 {
-      font-size: 2.75rem;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      color: #0b1821;
-      margin-bottom: 15px;
+      font-size: 2.8rem;
+      color: #2c3e50;
+      margin-bottom: 16px;
       letter-spacing: 0.03em;
     }
     header p {
-      font-size: 1.25rem;
-      color: #555;
-      font-weight: 500;
-      max-width: 700px;
+      font-size: 1.2rem;
+      max-width: 650px;
       margin: 0 auto 30px;
+      color: #555;
     }
     .btn-primary {
-      background: #ee6c4d;
+      background: #d35400;
       color: white;
-      padding: 18px 40px;
-      font-size: 1.15rem;
+      padding: 16px 42px;
+      font-size: 1.1rem;
       font-weight: 700;
-      border: none;
       border-radius: 30px;
+      border: none;
       cursor: pointer;
-      box-shadow: 0 6px 12px rgba(238,108,77,0.4);
-      transition: background 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 5px 15px rgba(211, 84, 0, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
       display: inline-block;
     }
     .btn-primary:hover {
-      background: #d3543a;
-      box-shadow: 0 8px 20px rgba(211,84,58,0.5);
+      background: #e67e22;
+      box-shadow: 0 8px 25px rgba(230, 126, 34, 0.5);
     }
 
     /* Benefícios */
     .benefits {
-      background: #fff;
-      padding: 50px 20px;
-      margin: 60px 0;
-      border-radius: 16px;
+      margin: 60px auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-      gap: 28px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 960px;
     }
     .benefit-item {
-      background: #fef6f2;
-      border-radius: 14px;
-      padding: 30px 25px;
+      background: white;
+      padding: 32px 28px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(211, 84, 0, 0.12);
       font-weight: 600;
-      text-align: center;
-      color: #bb4d32;
       font-size: 1.1rem;
-      box-shadow: 0 4px 10px rgba(238,108,77,0.2);
+      color: #d35400;
+      text-align: center;
       transition: transform 0.3s ease;
       cursor: default;
     }
     .benefit-item:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(238,108,77,0.3);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(230, 126, 34, 0.3);
     }
 
     /* Serviços */
     .services {
-      background: #fff;
-      padding: 50px 20px;
-      margin: 60px 0;
+      background: white;
+      padding: 50px 30px;
       border-radius: 16px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 0 auto 70px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.07);
     }
     .services h2 {
-      text-align: center;
-      margin-bottom: 35px;
-      font-size: 2.2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.1rem;
+      color: #d35400;
       font-weight: 700;
-      color: #bb4d32;
+      margin-bottom: 30px;
+      text-align: center;
       letter-spacing: 0.04em;
     }
-    .service-list {
-      list-style-type: none;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0;
-      font-size: 1.15rem;
-      color: #444;
-      font-weight: 500;
+    .services ul {
+      list-style: none;
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 18px;
+      gap: 22px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #555;
+      padding-left: 0;
     }
-    .service-list li {
+    .services ul li {
       position: relative;
-      padding-left: 28px;
-      line-height: 1.4;
-      cursor: default;
+      padding-left: 30px;
     }
-    .service-list li::before {
+    .services ul li::before {
       content: "✓";
       position: absolute;
       left: 0;
       top: 0;
-      font-size: 1.25rem;
-      color: #ee6c4d;
-      font-weight: 700;
+      color: #d35400;
+      font-weight: 900;
+      font-size: 1.3rem;
       line-height: 1;
     }
 
-    /* Depoimentos */
-    .testimonials {
-      background: #fff;
-      padding: 50px 20px;
-      margin: 60px 0;
-      border-radius: 16px;
-      max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 6px 22px rgba(0,0,0,0.07);
-    }
-    .testimonials h2 {
+    /* Galeria e Instagram */
+    .portfolio {
+      max-width: 960px;
+      margin: 0 auto 70px;
       text-align: center;
-      margin-bottom: 35px;
-      font-size: 2.2rem;
+    }
+    .portfolio h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 25px;
       font-weight: 700;
-      color: #bb4d32;
       letter-spacing: 0.04em;
     }
-    blockquote {
-      font-style: italic;
-      border-left: 5px solid #ee6c4d;
-      padding-left: 20px;
-      margin-bottom: 28px;
-      color: #555;
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-    blockquote footer {
-      font-weight: 700;
-      color: #222;
-      margin-top: 8px;
-      text-align: right;
-      font-size: 1rem;
-      letter-spacing: 0.02em;
-    }
-
-    /* Galeria */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 22px;
-      margin: 60px 0;
+      gap: 24px;
+      margin-bottom: 24px;
     }
     .gallery img {
       width: 100%;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      height: 190px;
       object-fit: cover;
-      height: 200px;
-      transition: transform 0.3s ease;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       cursor: pointer;
+      transition: transform 0.3s ease;
     }
     .gallery img:hover {
       transform: scale(1.05);
     }
-
-    /* Oferta */
-    .offer {
-      background: #bb4d32;
+    .btn-instagram {
+      background: #e4405f;
       color: white;
-      text-align: center;
-      padding: 30px 25px;
-      font-size: 1.4rem;
+      padding: 14px 40px;
       font-weight: 700;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(228,64,95,0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-instagram:hover {
+      background: #ff5c7d;
+      box-shadow: 0 8px 25px rgba(255,92,125,0.6);
+    }
+
+    /* Contato */
+    .contact {
+      background: white;
+      padding: 50px 30px;
+      max-width: 540px;
+      margin: 0 auto 80px;
       border-radius: 16px;
-      margin: 70px 0;
-      box-shadow: 0 6px 25px rgba(187,77,50,0.5);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    .contact h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d35400;
+      margin-bottom: 32px;
+      text-align: center;
       letter-spacing: 0.04em;
     }
-
-    /* Formulário */
-    form {
-      background: #fff;
-      padding: 50px 30px;
-      border-radius: 16px;
-      max-width: 540px;
-      margin: 0 auto 70px auto;
-      box-shadow: 0 6px 22px rgba(0,0,0,0.08);
-      font-weight: 600;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    form h2 {
-      text-align: center;
-      margin-bottom: 35px;
-      color: #bb4d32;
-      font-size: 2rem;
-      letter-spacing: 0.03em;
-      font-weight: 700;
-    }
-    form label {
+    .contact label {
       display: block;
-      margin-bottom: 10px;
       font-weight: 600;
-      color: #444;
+      margin-bottom: 8px;
+      color: #555;
     }
-    form input, form select {
+    .contact input, .contact select {
       width: 100%;
-      padding: 15px 12px;
-      margin-bottom: 28px;
-      border-radius: 10px;
-      border: 1.8px solid #ccc;
-      font-size: 1.1rem;
+      padding: 14px 16px;
+      margin-bottom: 26px;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 12px;
       transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
-    form input:focus, form select:focus {
-      border-color: #bb4d32;
+    .contact input:focus, .contact select:focus {
+      border-color: #d35400;
       outline: none;
-      box-shadow: 0 0 8px rgba(187,77,50,0.5);
+      box-shadow: 0 0 10px rgba(211, 84, 0, 0.4);
     }
-    form button {
-      background: #bb4d32;
+    .contact button {
+      width: 100%;
+      background: #d35400;
       color: white;
-      padding: 18px;
       border: none;
-      font-size: 1.25rem;
+      padding: 16px;
+      font-size: 1.2rem;
+      font-weight: 700;
       border-radius: 30px;
       cursor: pointer;
-      width: 100%;
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-      font-weight: 700;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      letter-spacing: 0.04em;
-      box-shadow: 0 6px 18px rgba(187,77,50,0.5);
+      box-shadow: 0 6px 20px rgba(211, 84, 0, 0.5);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
-    form button:hover {
-      background: #99402a;
-      box-shadow: 0 8px 25px rgba(153,64,42,0.7);
+    .contact button:hover {
+      background: #e67e22;
+      box-shadow: 0 8px 30px rgba(230, 126, 34, 0.6);
     }
 
     /* Rodapé */
     footer {
-      background: #fff;
-      color: #555;
-      padding: 30px 20px;
+      background: white;
       text-align: center;
-      font-size: 1rem;
-      border-top: 1px solid #e0e0e0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+      color: #777;
+      border-top: 1px solid #eee;
+      font-family: 'Open Sans', sans-serif;
     }
     footer a {
-      color: #bb4d32;
+      color: #d35400;
       font-weight: 700;
       margin: 0 8px;
       transition: color 0.3s ease;
     }
     footer a:hover {
-      color: #ee6c4d;
+      color: #e67e22;
     }
 
     /* Responsividade */
-    @media(max-width: 480px) {
+    @media (max-width: 480px) {
       header h1 {
-        font-size: 1.9rem;
-      }
-      .btn-primary {
-        width: 100%;
-        padding: 18px 0;
+        font-size: 2rem;
       }
       .benefits {
         grid-template-columns: 1fr;
-        padding: 40px 10px;
+        padding: 0 10px;
       }
-      .services {
-        padding: 40px 10px;
-      }
-      .service-list {
+      .services ul {
         grid-template-columns: 1fr;
-        font-size: 1rem;
-      }
-      .testimonials {
-        padding: 40px 10px;
       }
       .gallery {
         grid-template-columns: 1fr;
         gap: 18px;
-        margin: 40px 0;
       }
-      form {
-        padding: 40px 15px;
-      }
-      footer {
-        font-size: 0.9rem;
+      .contact {
+        padding: 40px 20px;
+        margin: 0 10px 60px;
       }
     }
   </style>
@@ -338,72 +296,67 @@
 
 <header>
   <div class="container">
-    <h1>Transforme Seu Espaço com Pintura de Alto Padrão em Uberlândia</h1>
-    <p>Acabamento impecável em fachadas, interiores, madeira e metais. Qualidade, durabilidade e beleza que fazem a diferença.</p>
+    <h1>Transforme Seu Espaço com Pintura de Alto Padrão</h1>
+    <p>Excelência em pintura residencial e comercial, com acabamento impecável e durabilidade garantida.</p>
     <a href="https://wa.me/5598981516639" target="_blank" class="btn-primary" rel="noopener noreferrer">
-      Peça seu Orçamento Grátis Agora
+      Solicite seu Orçamento Grátis
     </a>
   </div>
 </header>
 
 <section class="benefits container" aria-label="Benefícios">
-  <div class="benefit-item">Profissionais especializados e experientes</div>
-  <div class="benefit-item">Materiais de alta qualidade e tecnologia avançada</div>
-  <div class="benefit-item">Atendimento personalizado e ágil</div>
-  <div class="benefit-item">Garantia de satisfação e acabamento perfeito</div>
+  <div class="benefit-item">Equipe especializada e dedicada</div>
+  <div class="benefit-item">Uso de tintas premium e tecnologia avançada</div>
+  <div class="benefit-item">Atendimento personalizado e pontual</div>
+  <div class="benefit-item">Garantia de satisfação e qualidade superior</div>
 </section>
 
-<section class="services container" aria-label="Serviços oferecidos">
-  <h2>Nossos Serviços</h2>
-  <ul class="service-list">
-    <li>Pintura residencial e comercial</li>
-    <li>Pintura em fachadas</li>
-    <li>Pintura em madeiras e metais</li>
-    <li>Impermeabilização</li>
-    <li>Tratamento de trincas e fissuras</li>
-    <li>Aplicação de texturas e revestimentos decorativos</li>
-  </ul>
+<section class="services" aria-label="Serviços oferecidos">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Pintura residencial e comercial</li>
+      <li>Pintura de fachadas e áreas externas</li>
+      <li>Revestimentos texturizados e decorativos</li>
+      <li>Impermeabilização e proteção contra umidade</li>
+      <li>Tratamento de trincas e reparos estruturais</li>
+      <li>Pintura em madeira e metais</li>
+    </ul>
+  </div>
 </section>
 
-<section class="testimonials" aria-label="Depoimentos de clientes">
-  <h2>Depoimentos</h2>
-  <blockquote>
-    “O serviço da Soares Pinturas superou minhas expectativas! Recomendo para quem busca qualidade.”<footer>– João S.</footer>
-  </blockquote>
-  <blockquote>
-    “Equipe muito profissional e atendimento rápido. Minha casa ficou maravilhosa.”<footer>– Maria F.</footer>
-  </blockquote>
+<section class="portfolio" aria-label="Portfólio de pinturas">
+  <h2>Portfólio de Trabalhos</h2>
+  <div class="gallery">
+    <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/antes1.jpg" alt="Antes da pintura de fachada residencial" />
+    <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/depois1.jpg" alt="Depois da pintura de fachada residencial" />
+    <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/antes2.jpg" alt="Antes da pintura de parede interna" />
+    <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/depois2.jpg" alt="Depois da pintura de parede interna" />
+  </div>
+  <a href="https://instagram.com/soarespinturas" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+    Veja nosso Instagram
+  </a>
 </section>
 
-<section class="gallery container" aria-label="Galeria de fotos de trabalhos">
-  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/antes1.jpg" alt="Antes da pintura de fachada residencial" />
-  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/depois1.jpg" alt="Depois da pintura de fachada residencial" />
-  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/antes2.jpg" alt="Antes da pintura de parede interna" />
-  <img src="https://soarespinturas.github.io/SOARES-PINTURAS-SITE/img/depois2.jpg" alt="Depois da pintura de parede interna" />
-</section>
-
-<section class="offer container" aria-label="Oferta especial">
-  10% de desconto na primeira pintura residencial! Satisfação garantida ou seu dinheiro de volta.
-</section>
-
-<section class="contact container" aria-label="Formulário de contato">
+<section class="contact" aria-label="Formulário para orçamento">
   <form action="https://formspree.io/f/your-form-id" method="POST">
     <h2>Peça seu Orçamento</h2>
-    <label for="name">Nome</label>
-    <input type="text" id="name" name="name" required placeholder="Seu nome completo" />
+    <label for="name">Nome completo</label>
+    <input type="text" id="name" name="name" required placeholder="Seu nome" />
     <label for="phone">Telefone / WhatsApp</label>
     <input type="tel" id="phone" name="phone" required placeholder="(99) 99999-9999" />
     <label for="service">Serviço desejado</label>
-    <select id="service" name="service">
+    <select id="service" name="service" required>
       <option value="" disabled selected>Selecione o serviço</option>
       <option value="pintura_residencial">Pintura Residencial</option>
       <option value="pintura_comercial">Pintura Comercial</option>
-      <option value="fachadas">Fachadas</option>
-      <option value="madeiras_metal">Madeiras e Metais</option>
+      <option value="fachadas">Pintura de Fachadas</option>
+      <option value="madeira_metal">Pintura em Madeira e Metal</option>
       <option value="impermeabilizacao">Impermeabilização</option>
-      <option value="texturas_revestimentos">Texturas e Revestimentos</option>
+      <option value="reparos">Reparos e Tratamento de Trincas</option>
+      <option value="texturas">Texturas e Revestimentos</option>
     </select>
-    <button type="submit">Enviar</button>
+    <button type="submit">Enviar Pedido</button>
   </form>
 </section>
 
