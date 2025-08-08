@@ -16,8 +16,6 @@
     background: #f9fafb;
     color: #333;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   a { color: #001F3F; text-decoration: none; transition: color 0.3s ease; }
   a:hover { color: #003366; }
@@ -25,17 +23,36 @@
 
   /* Header */
   header {
-    background: #001F3F; color: white; padding: 70px 20px 80px;
-    text-align: center; border-radius: 0 0 25px 25px;
+    background: #001F3F;
+    color: white;
+    padding: 70px 20px 80px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
     box-shadow: 0 6px 25px rgba(0, 31, 63, 0.4);
   }
-  header h1 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 3rem; margin-bottom: 20px; letter-spacing: 0.05em; line-height: 1.2; }
-  header p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 40px; font-weight: 500; }
-
+  header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  header p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-weight: 500;
+  }
   .btn-primary, .btn-instagram {
-    font-weight: 700; padding: 18px 48px; font-size: 1.2rem; border-radius: 35px;
-    border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0, 31, 63, 0.3);
-    transition: background-color 0.3s ease, color 0.3s ease; display: inline-block; margin: 8px 12px 0 12px;
+    font-weight: 700;
+    padding: 18px 48px;
+    font-size: 1.2rem;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 31, 63, 0.3);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin: 8px 12px 0 12px;
   }
   .btn-primary { background: white; color: #001F3F; }
   .btn-primary:hover { background: #003366; color: white; }
@@ -44,71 +61,163 @@
 
   /* About */
   .about {
-    background: white; padding: 50px 40px; border-radius: 25px; max-width: 900px;
-    margin: -100px auto 70px; box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15); text-align: center;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 25px;
+    max-width: 900px;
+    margin: -100px auto 70px;
+    box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);
+    text-align: center;
   }
-  .about h2 { font-family: 'Montserrat', sans-serif; font-size: 2.3rem; color: #001F3F; margin-bottom: 20px; font-weight: 700; }
-  .about p { font-size: 1.15rem; color: #444; max-width: 700px; margin: 0 auto; line-height: 1.7; }
+  .about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    color: #001F3F;
+    margin-bottom: 20px;
+  }
+  .about p {
+    font-size: 1.15rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
 
-  /* Services (mantive seus estilos originais) */
+  /* Services */
   .services { margin: 0 auto 80px; max-width: 960px; }
-  .services h2 { font-family: 'Montserrat', sans-serif; font-size: 2.1rem; color: #001F3F; margin-bottom: 40px; font-weight: 700; text-align: center; }
-  .service-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; list-style: none; padding-left: 0; }
-  .service-list li { background: white; border-radius: 20px; padding: 30px 25px; box-shadow: 0 6px 20px rgba(0, 31, 63, 0.1); font-weight: 600; font-size: 1.1rem; color: #001F3F; position: relative; padding-left: 50px; }
-  .service-list li::before { content: "✓"; position: absolute; left: 20px; top: 50%; transform: translateY(-50%); font-weight: 900; font-size: 1.6rem; color: #001F3F; }
+  .services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    color: #001F3F;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    list-style: none;
+  }
+  .service-list li {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 6px 20px rgba(0, 31, 63, 0.1);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #001F3F;
+    position: relative;
+    padding-left: 50px;
+  }
+  .service-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: #001F3F;
+  }
 
   /* Process */
-  .process { background: white; max-width: 900px; margin: 0 auto 80px; border-radius: 25px; padding: 50px 40px; box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15); }
-  .process h2 { font-family: 'Montserrat', sans-serif; font-size: 2rem; font-weight: 700; color: #001F3F; margin-bottom: 40px; text-align: center; }
-  .steps { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
-  .step { flex: 1 1 160px; background: #e6f0f3; border-radius: 20px; padding: 30px 25px; box-shadow: 0 4px 15px rgba(0, 31, 63, 0.1); text-align: center; font-weight: 600; color: #001F3F; }
-  .step-number { font-size: 2.5rem; font-weight: 700; color: #001F3F; margin-bottom: 15px; }
-  .step-desc { font-size: 1.1rem; line-height: 1.5; }
+  .process {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto 80px;
+    border-radius: 25px;
+    padding: 50px 40px;
+    box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);
+  }
+  .process h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #001F3F;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .step {
+    flex: 1 1 160px;
+    background: #e6f0f3;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #001F3F;
+  }
+  .step-number { font-size: 2.5rem; margin-bottom: 15px; }
 
   /* Benefits */
-  .benefits { max-width: 960px; margin: 0 auto 80px; display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; }
-  .benefit-item { background: white; padding: 35px 30px; border-radius: 25px; box-shadow: 0 6px 25px rgba(0, 31, 63, 0.12); font-weight: 700; color: #001F3F; font-size: 1.1rem; text-align: center; }
-
-  /* Portfólio - imagens separadas (Antes / Depois) */
-  .portfolio { max-width: 960px; margin: 0 auto 60px; text-align: center; }
-  .portfolio h2 { font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #001F3F; margin-bottom: 24px; font-weight: 700; }
-  .comparison-container { margin: 30px auto; text-align: center; padding: 0 16px; }
-  .comparison-container h3 { font-size: 1.15rem; color: #001F3F; margin-bottom: 12px; font-weight: 700; }
-  .portfolio-img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    display: block;
-    margin: 0 auto 8px;
+  .benefits {
+    max-width: 960px;
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
   }
-  .caption { font-weight: bold; color: #444; margin-top: 6px; }
+  .benefit-item {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 25px;
+    box-shadow: 0 6px 25px rgba(0, 31, 63, 0.12);
+    font-weight: 700;
+    color: #001F3F;
+    text-align: center;
+  }
 
   /* Contact */
-  .contact { background: white; max-width: 540px; margin: 0 auto 80px; border-radius: 25px; padding: 50px 40px; box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15); }
-  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #001F3F; font-weight: 700; margin-bottom: 40px; text-align: center; }
-  .contact label { display: block; font-weight: 600; margin-bottom: 10px; color: #333; }
-  .contact input, .contact select { width: 100%; padding: 14px 16px; margin-bottom: 30px; border: 2px solid #cbd5db; border-radius: 15px; font-size: 1rem; transition: border-color 0.3s ease, box-shadow 0.3s ease; font-family: 'Open Sans', sans-serif; }
-  .contact input:focus, .contact select:focus { outline: none; border-color: #001F3F; box-shadow: 0 0 10px rgba(0, 31, 63, 0.3); }
-  .contact button { width: 100%; background: #001F3F; color: white; border: none; padding: 18px; font-size: 1.3rem; font-weight: 700; border-radius: 35px; cursor: pointer; box-shadow: 0 6px 25px rgba(0, 31, 63, 0.5); transition: background-color 0.3s ease; }
+  .contact {
+    background: white;
+    max-width: 540px;
+    margin: 0 auto 80px;
+    border-radius: 25px;
+    padding: 50px 40px;
+    box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);
+  }
+  .contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #001F3F;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .contact label { display: block; font-weight: 600; margin-bottom: 10px; }
+  .contact input, .contact select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 30px;
+    border: 2px solid #cbd5db;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  .contact button {
+    width: 100%;
+    background: #001F3F;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 35px;
+    cursor: pointer;
+  }
   .contact button:hover { background: #003366; }
 
   /* Footer */
-  footer { text-align: center; padding: 30px 20px; font-size: 0.95rem; color: #555; border-top: 1px solid #ddd; font-family: 'Open Sans', sans-serif; }
-  footer a { color: #001F3F; font-weight: 700; margin: 0 10px; transition: color 0.3s ease; }
-  footer a:hover { color: #003366; }
-
-  /* Responsive */
-  @media(max-width: 480px) {
-    header h1 { font-size: 2rem; }
-    .about { margin: -60px 15px 70px; padding: 35px 20px; }
-    .services h2, .process h2, .portfolio h2, .contact h2 { font-size: 1.7rem; }
-    .service-list { grid-template-columns: 1fr; padding: 0 15px; }
-    .steps { flex-direction: column; gap: 30px; }
-    .contact { padding: 40px 20px; margin: 0 15px 60px; }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.95rem;
+    color: #555;
+    border-top: 1px solid #ddd;
   }
+  footer a { color: #001F3F; font-weight: 700; }
+  footer a:hover { color: #003366; }
 </style>
 </head>
 <body>
@@ -117,8 +226,8 @@
   <div class="container">
     <h1>Soares Pinturas - Pintura de Alto Padrão em Uberlândia</h1>
     <p>Transformamos ambientes com acabamento impecável, durabilidade e beleza que impressionam.</p>
-    <a href="https://wa.me/5534999202880" target="_blank" rel="noopener noreferrer" class="btn-primary">Solicite seu Orçamento Grátis</a>
-    <a href="https://www.instagram.com/soares_pinturas01/profilecard/?igsh=dmx5cWQ1NDlqYWMw" target="_blank" rel="noopener noreferrer" class="btn-instagram">Conheça nosso Portfólio no Instagram</a>
+    <a href="https://wa.me/5534999202880" target="_blank" class="btn-primary">Solicite seu Orçamento Grátis</a>
+    <a href="https://www.instagram.com/soares_pinturas01" target="_blank" class="btn-instagram">Conheça nosso Portfólio no Instagram</a>
   </div>
 </header>
 
@@ -156,36 +265,6 @@
   <div class="benefit-item">Compromisso com prazos e transparência</div>
 </section>
 
-<!-- === Seção ANTES / DEPOIS (substitui o antigo portfólio) === -->
-<section class="portfolio" aria-label="Portfólio Antes e Depois">
-  <h2>Antes e Depois</h2>
-
-  <div class="comparison-container">
-    <h3>Antes da Fachada</h3>
-    <img class="portfolio-img" src="img/fachada-antes-800px.jpeg" alt="Antes da pintura de fachada" />
-    <p class="caption">Fachada — Antes</p>
-  </div>
-
-  <div class="comparison-container">
-    <h3>Depois da Fachada</h3>
-    <img class="portfolio-img" src="img/fachada-depois-800px.jpeg" alt="Depois da pintura de fachada" />
-    <p class="caption">Fachada — Depois</p>
-  </div>
-
-  <div class="comparison-container">
-    <h3>Antes da Parede Interna</h3>
-    <img class="portfolio-img" src="img/parede-antes-800px.jpeg" alt="Antes da pintura de parede interna" />
-    <p class="caption">Parede Interna — Antes</p>
-  </div>
-
-  <div class="comparison-container">
-    <h3>Depois da Parede Interna</h3>
-    <img class="portfolio-img" src="img/parede-depois-800px.jpeg" alt="Depois da pintura de parede interna" />
-    <p class="caption">Parede Interna — Depois</p>
-  </div>
-</section>
-<!-- ========================================================= -->
-
 <section class="contact">
   <form action="https://formspree.io/f/your-form-id" method="POST">
     <h2>Solicite seu Orçamento</h2>
@@ -210,7 +289,7 @@
 
 <footer>
   <p>Contato: <a href="tel:+5534999202880">+55 (34) 99920-2880</a> | WhatsApp: <a href="https://wa.me/5534999202880" target="_blank">Clique aqui</a></p>
-  <p>Siga-nos no Instagram: <a href="https://www.instagram.com/soares_pinturas01/profilecard/?igsh=dmx5cWQ1NDlqYWMw" target="_blank">@soares_pinturas01</a></p>
+  <p>Siga-nos no Instagram: <a href="https://www.instagram.com/soares_pinturas01" target="_blank">@soares_pinturas01</a></p>
   <p>© 2025 Soares Pinturas - Todos os direitos reservados</p>
 </footer>
 
