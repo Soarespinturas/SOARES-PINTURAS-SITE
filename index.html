@@ -53,6 +53,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
     margin: 8px 12px 0 12px;
+    text-align: center;
   }
   .btn-primary { background: white; color: #001F3F; }
   .btn-primary:hover { background: #003366; color: white; }
@@ -178,35 +179,14 @@
     border-radius: 25px;
     padding: 50px 40px;
     box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);
+    text-align: center;
   }
   .contact h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: #001F3F;
     margin-bottom: 40px;
-    text-align: center;
   }
-  .contact label { display: block; font-weight: 600; margin-bottom: 10px; }
-  .contact input, .contact select {
-    width: 100%;
-    padding: 14px 16px;
-    margin-bottom: 30px;
-    border: 2px solid #cbd5db;
-    border-radius: 15px;
-    font-size: 1rem;
-  }
-  .contact button {
-    width: 100%;
-    background: #001F3F;
-    color: white;
-    border: none;
-    padding: 18px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border-radius: 35px;
-    cursor: pointer;
-  }
-  .contact button:hover { background: #003366; }
 
   /* Footer */
   footer {
@@ -266,25 +246,9 @@
 </section>
 
 <section class="contact">
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <h2>Solicite seu Orçamento</h2>
-    <label for="name">Nome completo</label>
-    <input type="text" id="name" name="name" required placeholder="Seu nome" />
-    <label for="phone">Telefone / WhatsApp</label>
-    <input type="tel" id="phone" name="phone" required placeholder="(99) 99999-9999" />
-    <label for="service">Serviço desejado</label>
-    <select id="service" name="service" required>
-      <option value="" disabled selected>Selecione o serviço</option>
-      <option value="pintura_residencial">Pintura Residencial</option>
-      <option value="pintura_comercial">Pintura Comercial</option>
-      <option value="fachadas">Pintura de Fachadas</option>
-      <option value="madeira_metal">Pintura em Madeira e Metal</option>
-      <option value="impermeabilizacao">Impermeabilização</option>
-      <option value="reparos">Reparos e Tratamento de Trincas</option>
-      <option value="texturas">Texturas e Revestimentos</option>
-    </select>
-    <button type="submit">Enviar Pedido</button>
-  </form>
+  <h2>Solicite seu Orçamento</h2>
+  <a href="https://wa.me/5534999202880" target="_blank" class="btn-primary" style="width:100%; display:block; margin-bottom:20px;">Enviar mensagem no WhatsApp</a>
+  <a href="https://www.instagram.com/soares_pinturas01" target="_blank" class="btn-instagram" style="width:100%; display:block;">Ver Portfólio no Instagram</a>
 </section>
 
 <footer>
