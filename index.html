@@ -58,9 +58,7 @@
     margin: 0 auto 40px;
     font-weight: 500;
   }
-  .btn-primary {
-    background: white;
-    color: #001F3F;
+  .btn-primary, .btn-instagram {
     font-weight: 700;
     padding: 18px 48px;
     font-size: 1.2rem;
@@ -70,10 +68,22 @@
     box-shadow: 0 6px 18px rgba(0, 31, 63, 0.3);
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
+    margin: 8px 12px 0 12px;
+  }
+  .btn-primary {
+    background: white;
+    color: #001F3F;
   }
   .btn-primary:hover {
     background: #003366;
     color: white;
+  }
+  .btn-instagram {
+    background: #E4405F; /* Cor do Instagram */
+    color: white;
+  }
+  .btn-instagram:hover {
+    background: #b52f46;
   }
 
   /* About */
@@ -349,8 +359,11 @@
   <div class="container">
     <h1>Soares Pinturas - Pintura de Alto Padrão em Uberlândia</h1>
     <p>Transformamos ambientes com acabamento impecável, durabilidade e beleza que impressionam.</p>
-    <a href="https://wa.me/5534999202880" target="_blank" rel="noopener noreferrer" class="btn-primary">
+    <a href="https://wa.me/5534999202880" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Solicitar orçamento pelo WhatsApp">
       Solicite seu Orçamento Grátis
+    </a>
+    <a href="https://www.instagram.com/soares_pinturas01/profilecard/?igsh=dmx5cWQ1NDlqYWMw" target="_blank" rel="noopener noreferrer" class="btn-instagram" aria-label="Ver portfólio no Instagram">
+      Conheça nosso Portfólio no Instagram
     </a>
   </div>
 </header>
@@ -438,8 +451,4 @@
 <footer>
   <p>Contato: <a href="tel:+5534999202880">+55 (34) 99920-2880</a> | WhatsApp: <a href="https://wa.me/5534999202880" target="_blank" rel="noopener noreferrer">Clique aqui</a></p>
   <p>Siga-nos no Instagram: <a href="https://www.instagram.com/soares_pinturas01/profilecard/?igsh=dmx5cWQ1NDlqYWMw" target="_blank" rel="noopener noreferrer">@soares_pinturas01</a></p>
-  <p>© 2025 Soares Pinturas - Todos os direitos reservados.</p>
-</footer>
-
-</body>
-</html>
+  <p>© 2025 Soares Pinturas -
